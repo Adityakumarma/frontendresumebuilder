@@ -16,9 +16,9 @@ function Preview({userInput,isResumeAdded,resumeId,setUserInput}) {
   console.log(userInput);
 
   const downloadPDF = async()=>{
-    const input = document.getElementById("result")
-    const canvas = await html2canvas(input, {scale : 2})
-    const imgData = canvas.toDataURL("image/png")
+    const input = document.getElementById("result") //to get id
+    const canvas = await html2canvas(input, {scale : 2}) // convert the selected html to canvas(screenshot)
+    const imgData = canvas.toDataURL("image/png") // convert canvas to image url
 
     const pdf = new jsPDF("P","mm","a4")
     // const pdf = new jsPDF("P","mm","a4")
