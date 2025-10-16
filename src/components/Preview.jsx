@@ -39,7 +39,7 @@ function Preview({userInput,isResumeAdded,resumeId,setUserInput}) {
         <p><Edit resumeId={resumeId} setUserInput={setUserInput} /></p>
         <p><button type='button' onClick={downloadPDF} className='btn btn-primary align-items-center d-flex justify-content-center btn-lg'><FaFileDownload /></button></p>
      </div>}
-          <Link href="/History"> <button className='btn btn-primary align-items-center d-flex justify-content-center btn-lg'><FaHistory /></button></Link>
+          <Link href="/history"> <button className='btn btn-primary align-items-center d-flex justify-content-center btn-lg'><FaHistory /></button></Link>
           <Link href="/" ><p className=' btn text-primary'>BACK</p>
           </Link>
 
