@@ -22,7 +22,7 @@ export const updateAResumeAPI = async (id,resume)=>{
 
 // get allresumes
 export const getAllResumesAPI = async ()=>{
-   return  await commonAPI("GET", `${BASEURL}/all-resumes/`)
+   return  await commonAPI("GET", `${BASEURL}/all-resumes`)
 }
 
 // delete resume
