@@ -8,8 +8,9 @@ import Link from '@mui/material/Link';
 import Divider from '@mui/material/Divider';
 import Edit from './Edit';
 import Stack from '@mui/material/Stack';
-import {jsPDF} from "jsPDF";
 import html2canvas from "html2canvas";
+import { jsPDF } from "jspdf";
+
 
 function Preview({userInput,isResumeAdded,resumeId,setUserInput}) {
   console.log(userInput);
@@ -20,6 +21,7 @@ function Preview({userInput,isResumeAdded,resumeId,setUserInput}) {
     const imgData = canvas.toDataURL("image/png")
 
     const pdf = new jsPDF("P","mm","a4")
+    // const pdf = new jsPDF("P","mm","a4")
     // const pdfWidth = pdf.internal.pageSize.getWidth()
     // const pdfHeight =(canvas.height*pdfWidth)/canvas.width
     pdf.addImage(imgData,"png",0,0,210,297)
